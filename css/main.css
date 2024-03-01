@@ -12,6 +12,11 @@
     --blue-500: hsl(246, 80%, 60%);
     --blue-700: hsl(235, 46%, 20%);
     --blue-900: hsl(226, 43%, 10%);
+    --red-100: hsl(15, 100%, 70%);
+    --red-200: hsl(348, 100%, 68%);
+    --green-100: hsl(145, 58%, 55%);
+    --violet-100: hsl(264, 64%, 52%);
+    --orange-100: hsl(43, 84%, 65%);
     /* Fonts */
     --fonts: 'Rubik', sans-serif;
     --fs: 18px;
@@ -19,5 +24,127 @@
     --weight-normal: 400;
     --weight-bold: 500;
 
+    --radius: 0.75rem;
 }
 
+body {
+    margin: 0;
+    background-color: var(--blue-900);
+    font-size: var(--fs);
+    color: white;
+}
+
+.dashboard {
+    min-height: 100vh;
+    padding: 4rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard__content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(300px, 330px));
+}
+
+.dashboard__person {
+    background-color: var(--blue-700);
+    border-radius: var(--radius);
+}
+
+.info-card {
+    background-color: var(--blue-500);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.info-card__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.info-card__subtitle {
+    font-size: 12px;
+    font-weight: var(--weight-light);
+    margin: 0;
+}
+
+.info-card__title {
+    font-weight: var(--weight-light);
+    margin: 0.5rem 0 0;
+}
+
+.view-selector {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    font-weight: var(--weight-light);
+}
+
+.dashboard__card {
+    width: 100%;
+    padding-top: 2.15rem;
+    background-color: blue;
+    border-radius: var(--radius);
+}
+
+.dashboard__card--work {
+    background-color: var(--red-100);
+}
+.dashboard__card--play {
+    background-color: var(--blue-100);
+}
+.dashboard__card--study {
+    background-color: var(--red-200);
+}
+.dashboard__card--exercise {
+    background-color: var(--green-100);
+}
+.dashboard__card--social {
+    background-color: var(--violet-100);
+}
+.dashboard__card--self-care {
+    background-color: var(--orange-100);
+}
+
+.tracking__card {
+    background-color: var(--blue-700);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+}
+
+.tracking__card__header, .tracking__card__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--weight-light);
+}
+
+.tracking__card__body {
+    margin-top: 1rem;
+}
+
+.tracking__card__title {
+    margin: 0;
+}
+
+.tracking__card__time {
+    font-size: var(--fs);
+    font-weight: var(--weight-light);
+}
+
+.tracking__card__time {
+    font-size: 32px;
+    font-weight: var(--weight-light);
+}
