@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --blue-100: hsl(195, 74%, 62%);
+    --blue-200: hsl(236, 100%, 87%);
+    --blue-300: hsl(235, 45%, 61%);
+    --blue-500: hsl(246, 80%, 60%);
+    --blue-700: hsl(235, 46%, 20%);
+    --blue-900: hsl(226, 43%, 10%);
+    /* Fonts */
+    --fonts: 'Rubik', sans-serif;
+    --fs: 18px;
+    --weight-light: 300;
+    --weight-normal: 400;
+    --weight-bold: 500;
+
+}
+
