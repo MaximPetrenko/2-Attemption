@@ -95,33 +95,52 @@ body {
 .dashboard__card {
     width: 100%;
     padding-top: 2.15rem;
-    background-color: blue;
     border-radius: var(--radius);
 }
 
 .dashboard__card--work {
     background-color: var(--red-100);
+    background-image: url(../images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 .dashboard__card--play {
     background-color: var(--blue-100);
+    background-image: url(../images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 .dashboard__card--study {
     background-color: var(--red-200);
+    background-image: url(../images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 .dashboard__card--exercise {
     background-color: var(--green-100);
+    background-image: url(../images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 .dashboard__card--social {
     background-color: var(--violet-100);
+    background-image: url(../images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 .dashboard__card--self-care {
     background-color: var(--orange-100);
+    background-image: url(../images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -15%;
 }
 
 .tracking__card {
     background-color: var(--blue-700);
     border-radius: var(--radius);
     padding: 1.25rem;
+    position: relative;
+    bottom: -2px;
 }
 
 .tracking__card__header, .tracking__card__body {
@@ -147,4 +166,34 @@ body {
 .tracking__card__time {
     font-size: 32px;
     font-weight: var(--weight-light);
+}
+
+@media (min-width: 1024px) {
+    .dashboard__content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .dashboard__person {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 100%;
+        display: grid;
+        
+    }
+    .info-card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    .info-card__text{
+        gap: 15px;
+    }
+    .info-card__title {
+        font-size: 30px;
+    }
+    .view-selector {
+        flex-direction: column;
+        font-size: 12px;
+        gap: 10px;
+    }
 }
