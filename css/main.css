@@ -176,8 +176,8 @@ body {
         grid-row-start: 1;
         grid-row-end: 3;
         height: 100%;
-        display: grid;
-        
+        display: flex;
+        flex-direction: column;
     }
     .info-card {
         flex-direction: column;
@@ -195,5 +195,14 @@ body {
         flex-direction: column;
         font-size: 12px;
         gap: 10px;
+    }
+    .tracking__card__title, .tracking__card__previous {
+        font-size: 12px;
+        font-weight: var(--weight-light);
+        margin-top: 5px;
+    }
+    .tracking__card__body {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
